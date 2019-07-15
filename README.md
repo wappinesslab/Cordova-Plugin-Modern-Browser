@@ -62,7 +62,7 @@ const options = {
       webViewAppCacheEnabled : false, //BROWSER CACHE 
       webViewGeolocationEnabled: true, //GEOLOCALTION
       webViewAudioEnabled: true, //ENABLE AUDIO ACCESS
-      webViewCookieEnabled: true
+      webViewCookieEnabled: true //ENABLE COOKIES
     };
 
     ModernBrowserPlugin.create(options, function(loaded) {
