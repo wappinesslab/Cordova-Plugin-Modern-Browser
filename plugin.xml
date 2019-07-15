@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-modernbrowser" version="0.0.2"
+   xmlns="http://apache.org/cordova/ns/plugins/1.0"
+   xmlns:android="http://schemas.android.com/apk/res/android">
+ <name>ModernBrowserPlugin</name>
+    
+    <js-module name="ModernBrowserPlugin" src="www/ModernBrowserPlugin.js">
+      <clobbers target="ModernBrowserPlugin" />
+    </js-module>
+
+    <platform name="android">
+    
+      <!-- Finestwebview -->
+     <framework src="com.github.hzw1199:AwesomeWebView-Android:1.7.1" />
+
+    <config-file parent="/*" target="res/xml/config.xml">
+      <feature name="ModernBrowserPlugin">
+            <param name="android-package" value="com.hitmacreed.plugin.Main" />
+      </feature>
+    </config-file>
+
+
+    <config-file target="AndroidManifest.xml" parent="/manifest/application">
+       <activity
+            android:name="com.wuadam.awesomewebview.AwesomeWebViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensor"
+            android:usesCleartextTraffic="true"
+            android:theme="@style/FinestWebViewTheme.Light" />
+    </config-file>
+
+    <config-file target="AndroidManifest.xml" parent="/manifest">
+        <uses-permission android:name="android.permission.INTERNET"/>
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <uses-permission android:name="android.permission.CAMERA" />
+        <uses-permission android:name="android.permission.RECORD_AUDIO" />
+        <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    </config-file>
+
+    <config-file parent="/*" target="AndroidManifest.xml">
+    
+    </config-file>
+
+    <source-file src="src/android/Main.java" target-dir="src/com/hitmacreed/plugin" />
+
+    
+    </platform>
+
+</plugin>

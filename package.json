@@ -1,0 +1,33 @@
+{
+    "name": "modernbrowser",
+    "version": "0.0.2",
+    "description": "An Android Cordova plugin that allows users to use a modern Web-browser (in App Browser) without leaving the app",
+    "cordova": {
+      "id": "cordova-plugin-modern-browser",
+      "platforms": [
+        "android"
+      ]
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/hitmacreed/Cordova-Plugin-Modern-Browser.git"
+    },
+    "keywords": [
+      "plugin", 
+      "Browser",
+      "ionic",
+      "in App Browser"
+    ],
+    "engines": [
+      {
+        "name": "cordova",
+        "version": ">=3.0.0"
+      }
+    ],
+    "author": "Kevin Dias <kevindiasdeda@hotmail.com>",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/hitmacreed/Cordova-Plugin-Modern-Browser.git/issues"
+    },
+    "homepage": "https://github.com/hitmacreed/Cordova-Plugin-Modern-Browser.git"
+  }
